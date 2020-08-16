@@ -1,17 +1,18 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import CssBaseline from '@material-ui/core/CssBaseline';
 import Container from '@material-ui/core/Container';
 
 import SearchBar from './components/searchbar'
+import Header from './components/header'
 
 const App = () => {
     return(
-    <React.Fragment>
-        <Container maxWidth="sm">
+    <Fragment>
+        <Container maxWidth="md">
+            <Header/>
             <SearchBar/>
         </Container>
-    </React.Fragment>
+    </Fragment>
     )
 }
 

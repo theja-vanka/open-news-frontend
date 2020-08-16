@@ -6,8 +6,8 @@ class SearchBar extends Component {
     render(){
         return (
             <Fragment>
-                <form styles={{width: 100}} noValidate autoComplete="off">
-                    <TextField id="standard-basic" label="" fullWidth/>
+                <form noValidate autoComplete="off">
+                    <TextField id="standard-basic" label="Search article" fullWidth/>
                 </form>
             </Fragment>
         )
