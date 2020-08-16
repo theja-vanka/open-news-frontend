@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Open News Analytics",
+  "name": "Analytics of News Data",
   "icons": [
     {
       "src": "favicon.ico",
