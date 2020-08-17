@@ -24,6 +24,7 @@ class HeaderStyle {
                 textAlign: 'center',
                 fontSize: '2.75em',
                 color: '#7c7c7c',
+                fontFamily: 'Roboto',
                 '@media (min-width: 991px)': {
                     textAlign: 'center',
                     width: '100%',
