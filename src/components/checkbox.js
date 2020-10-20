@@ -26,7 +26,8 @@ class MyCheckBox extends Component{
         }).catch(err => console.log(err))
         const sources = response.data.sources
         let checkid = []
-        sources.map((source) => {
+        // eslint-disable-next-line
+        sources.map(source => {
             checkid[source.id] = false
         })
         checkid['sources'] = sources
@@ -48,6 +49,7 @@ class MyCheckBox extends Component{
                                     onChange={handleChange}
                                     name={source.id}
                                     color="primary"
+                                    id={source.id}
                                 />
                             }
                             label={source.name}

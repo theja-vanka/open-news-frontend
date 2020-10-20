@@ -1,21 +1,15 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Container from '@material-ui/core/Container';
 
-import SearchBar from './components/searchbar'
-import Header from './components/header'
-import MyCheckBox from './components/checkbox'
+import { Provider }from 'react-redux'
+import { createStore, applyMiddleware } from 'redux'
 
-const App = () => {
-    return(
-    <Fragment>
-        <Container maxWidth="md">
-            <Header/>
-            <SearchBar/>
-            <MyCheckBox/>
-        </Container>
-    </Fragment>
-    )
-}
+import App from './App'
 
-ReactDOM.render(<App/>, document.getElementById('root'))
+const createStoreWithMiddleware = applyMiddleware()(createStore)
+
+ReactDOM.render(
+    <Provider store={createStoreWithMiddleware()}>
+        <App/>
+    </Provider>,
+    document.getElementById('root'))
